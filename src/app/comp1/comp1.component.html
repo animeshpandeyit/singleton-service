@@ -1,0 +1,21 @@
+<p>Please Enter a Number...</p>
+
+<input type="text" #txtval />
+
+<button (click)="addnumber(txtval.value)">add number</button>
+
+<table *ngFor="let i of list1">
+  <ul>
+    <li>{{ i }}</li>
+  </ul>
+</table>
+
+<!-- <h3>
+<button (click)="addnumber(txtval.value)">add number</button>
+
+  addnumber(val: any) 
+  { this._numlistService.addnum(val); }
+
+  addnum(num: number) 
+  { this.list.push(num); }
+</h3> -->
